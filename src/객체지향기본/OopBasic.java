@@ -35,6 +35,7 @@ class Student {
 
     public void  setGrade(int grade){
         this.grade =grade;
+        return;
     }
     public void setAddress(String add){
         address =add;
