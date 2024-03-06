@@ -4,17 +4,16 @@ import java.util.Scanner;
 
 public class Food {
     public static void main(String[] args) {
+        int t, a, b, c;
         Scanner sc = new Scanner(System.in);
-        System.out.println("사용 시간 입력 (초)");
-        int t = sc.nextInt();
-        int a=0; //5분
-        int b=0; //1분
-        int c=0; //10초
-        while (true){
-            int cnt;
-            if(t%60==0){
-
-            }
+        System.out.print("요리시간(초) : ");
+        t = sc.nextInt();
+        if(t % 10 != 0) System.out.println("-1");
+        else {
+            a = t / 300;
+            b = t % 300 / 60;
+            c = t % 300 % 60 / 10;
+            System.out.printf("%d %d %d\n", a, b, c);
         }
     }
 }
