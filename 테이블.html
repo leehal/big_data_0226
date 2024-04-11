@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+      border-collapse: collapse;
+    }
+    th, td {
+      width: 80px;
+      border: 1px solid lightblue;
+      padding: 4px;
+      background-color: lemonchiffon;
+    }
+    th {
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+  <!-- 표(table)은 향과 열로 이루어져 있음 -->
+  <table>
+    <!-- <caption>표 제목</caption> -->
+    <tr>
+      <th>여기는 제목입니다</th>
+    </tr>
+    <tr>
+      <td>여기는 내용입니다</td>
+    </tr>
+  </table>
+  <br />
+  <table>
+    <tr>
+      <th>번호</th>
+      <th>상품명</th>
+      <th>수량</th>
+      <th>가격</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>곰돌이</td>
+      <td>1</td>
+      <td>1500원</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>콜라</td>
+      <td>4</td>
+      <td rowspan="2">500원</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>사이다</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td colspan="3">총금액</td>
+      <td>6500원</td>
+    </tr>
+  </table>
+</body>
+</html>

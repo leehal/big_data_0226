@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <input type="text" name="username">
+  <input type="password" name="password">
+  <input type="checkbox" name="check">
+  <input type="radio" name="radio" value="1">
+  <input type="submit" value="제출">
+  <input type="reset" value="초기화">
+  <button type="button">버튼</button>
+  <input type="hidden" name="hidden_input">
+  <input type="date" name="date_input">
+  <input type="time" name="time_input">
+  <input type="datetime" name="datetime_input">
+  <input type="email" name="email_input">
+  <input type="file" name="file_input">
+  <input type="image" src="image.jpg">
+  <input type="month" name="month_input">
+  <input type="number" name="number_input">
+  <input type="range" name="range_input">
+  <input type="search" name="search_input">
+  <input type="tel" name="tel_input">
+  <input type="url" name="url_input">
+  <input type="week" name="week_input">
+  <input type="color" name="color_input"> -->
+
+  <!-- 라디오 타입 : 여러 항목 중 하나만 선택 하도록 함 -->
+  <form action="#">
+    <label for="apple">사과</label>
+    <input type="radio" id="apple" name="fruits" value="apple" checked>
+    <label for="orange">오렌지</label>
+    <input type="radio" id="orange" name="fruits" value="orange">
+    <label for="banana">바나나</label>
+    <input type="radio" id="banana" name="fruits" value="banana">
+    <label for="mango">망고</label>
+    <input type="radio" id="mango" name="fruits" value="mango">
+    <hr />
+    <label for="user-id">아이디</label>
+    <input type="text" id="user-id" placeholder="6자리 이상">
+  </form>
+
+  <!-- fieldset 태그로 그룹을 만들면 그룹별로 박스 모양의 테두리가 생김 -->
+  <form action="#">
+    <fieldset>
+      <legend>기본 정보</legend>
+      <div>
+        <label for="userid">아이디</label>
+        <input type="text" id="userid">
+      </div>
+      <div>
+        <label for="pwd">비밀번호</label>
+        <input type="password" id="pwd">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>선택정보</legend>
+      <div>
+        <label for="age">나이</label>
+        <input type="number" name="age" id="age" placeholder="숫자만 입력">
+      </div>
+      <div>
+        <label for="recom">추천인</label>
+        <input type="text" name="recom" id="recom" placeholder="없으면 생략가능">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>블로그 글쓰기</legend>
+      <div>
+        <label for="title">제목</label>
+        <input type="text" id="title">
+      </div>
+      <div>
+        <label for="desc">내용</label>
+        <textarea id="desc" cols="100" rows="10" readonly></textarea>
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
