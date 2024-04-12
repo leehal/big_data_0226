@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {}
+
+    .box label {
+      width: 80px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    .box span {
+      font-size: 12px;
+    }
+
+    .box input {
+      width: 380px;
+    }
+
+    .btn {
+      width: 80px;
+    }
+
+    img {
+      width: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>아이패드 주문하기</h1>
+  <form action="#">
+    <div class="box">
+      <fieldset>
+        <legend>배송 정보</legend>
+        <div>
+          <label for="주문상품"><b>주문상품</b></label>
+          <input type="text" id="주문상품" readonly value="아이패드 12.9 인치">
+          <br>
+          <label for="이름"><b>이름</b></label>
+          <input type="text" id="이름">
+          <br>
+          <label for="배송주소"><b>배송주소</b></label>
+          <input type="text" id="배송주소">
+          <br>
+          <label for="이메일"><b>이메일</b></label>
+          <input type="email" id="이메일">
+          <br>
+          <label for="연락처"><b>연락처</b></label>
+          <input type="text" id="연락처" placeholder="하이픈 빼고 입력해주세요">
+          <br>
+          <label for="배송지정"><b>배송지정</b></label>
+          <input type="date" id="배송지정"><span><b>(주문일로부터 최소 3일 이후)</b></span>
+        </div>
+      </fieldset>
+    </div>
+    <p></p>
+    <div style="text-align: center;">
+      <input type="submit" value="주문하기" class="btn">
+      <input type="reset" value="취소하기" class="btn">
+    </div>
+  </form>
+  <hr>
+  <form action="#">
+    <div>
+      <fieldset>
+        <legend>기본정보</legend>
+        <div class="box">
+          <label for="id"><b>아이디</b></label>
+          <input type="text" id="id" value="jts2024">
+          <br>
+          <label for="pwd"><b>비밀번호</b></label>
+          <input type="password" id="pwd">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>세부정보</legend>
+        <div>
+          <label for="email"><b>이메일</b></label>
+          <input type="email" id="email" placeholder="@를 넣어야 됩니다.">
+          <br>
+          <label for="phone"><b>전화번호</b></label>
+          <input type="tel" id="phone" placeholder="하이폰을 넣지 마세요">
+          <br>
+          <label for="age"><b>나이</b></label>
+          <input type="number" id="age">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>주소입력</legend>
+        <div>
+          <label for="city"><b>도시</b></label>
+          <select name="" id="city">
+            <option value="강남">강남</option>
+            <option value="수원">수원</option>
+            <option value="오산">오산</option>
+            <option value="세종">세종</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>성별</legend>
+        <div>
+          <label for="남성"><b>남성</b></label>
+          <input type="radio" name="gender" id="남성">
+          <label for="여성"><b>여성</b></label>
+          <input type="radio" name="gender" id="여성">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>직업</legend>
+        <div>
+          <label for="stu"><b>학생</b></label>
+          <input type="radio" name="job" id="stu">
+          <label for="회사원"><b>회사원</b></label>
+          <input type="radio" name="job" id="회사원">
+          <label for="주부"><b>주부</b></label>
+          <input type="radio" name="job" id="주부">
+          <label for="무직"><b>무직</b></label>
+          <input type="radio" name="job" id="무직">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>취미</legend>
+        <div>
+          <label for="운동"><b>운동</b></label>
+          <input type="radio" name="hob" id="운동">
+          <label for="음악"><b>음악</b></label>
+          <input type="radio" name="hob" id="음악" checked>
+          <label for="그림"><b>그림</b></label>
+          <input type="radio" name="hob" id="그림">
+        </div>
+      </fieldset>
+      <p></p>
+      <label for="comdate"><b>가입일</b></label>
+      <input type="date" name="" id="comdate">
+      <br>
+      <p></p>
+      <label for="tearea"><b>소개</b></label>
+      <p></p>
+      <textarea name="" id="tearea" cols="300" rows="10"></textarea>
+      <br>
+      <button>
+        <img src="./images/threecat.jpg" alt="">제출
+      </button>
+      <button>
+        <img src="./images/threecat.jpg" alt="">초기화
+      </button>
+    </div>
+  </form>
+</body>
+
+</html>
