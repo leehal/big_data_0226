@@ -35,6 +35,9 @@
       <input type="submit" value="접수하기">
       <input type="reset" value="다시쓰기">
     </div>
+    <div>
+      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+    </div>
   </div>
 </body>
 
