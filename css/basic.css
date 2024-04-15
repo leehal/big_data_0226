@@ -1,0 +1,14 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: royalblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+h1 {
+  font-size: 50px;
+  color: tomato;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      color: white;
+      background-color: green;
+    }
+
+    /* div {
+      width: 100px;
+      height: 100px;
+      background-color: aliceblue;
+      color: orchid;
+    } */
+
+    .accent {
+      border: 1px solid orange;
+      padding: 5px;
+    }
+
+    .bg {
+      background-color: salmon;
+    }
+
+    /* id 선택자 : 문서에서 한 번만 적용가능 (리액트에서는 사용불가) */
+    #container {
+      width: 500px;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid aquamarine;
+    }
+    /* 기본 속성 선택자 : 속성과 값을 사용해 선택자를 지정하는 방법 */
+    #container a[target="_blank"]{
+      color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <p>오늘은 즐거운 금요일 입니다.</p>
+    <!-- <div>곰돌이 사육사</div> -->
+    <h1 class="accent bg">레드향</h1>
+    <p>
+      껍질이 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불린다.
+    </p>
+    <a href="http://naver.com" target="_blank">네이버</a>
+    <br>
+    <a href="http://google.co.kr" target="_self">구글</a>
+  </div>
+  <a href="http://kakao.co.kr" target="_blank">카카오</a>
+</body>
+
+</html>
