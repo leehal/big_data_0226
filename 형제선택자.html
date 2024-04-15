@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 ~ h3 {
+      color: tomato;
+    }
+    h1::before{
+      content: "★";
+			color: red;
+    } 
+    button{
+      width: 100px;
+      height: 100px;
+    }
+    button:active {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      transition: all 2s ease-in;
+    }
+    input:focus{
+      background-color: lawngreen;
+    }
+    input:disabled {
+      background-color: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <!-- 인접 형제 선택자 : + 기호를 사용해 인접한 형제 요소 선택 -->
+  <!-- h1 + h2 {
+      color: tomato;
+    } -->
+  <!-- 일반 형제 선택자 : ~ -->
+  <!-- 가상 요소 선택자 : ::before, ::after, ::first-letter, ::first-line 등이 있다 -->
+  <!-- 동적 가상 선택자 : :hover(마우스를 올리는 동작), :active(마우스 클릭) -->
+  <!-- 입력요소 가상 선택자 :  -->
+  <h1>Test 1</h1>
+  <h2>Test 2</h2>
+  <h3>Test 3</h3>
+  <h1>Heading</h1>
+  <button>버튼</button>
+  <label for="in">입력</label>
+  <input type="text" id="in">
+  <label for="in2">입력 비활성화</label>
+  <input type="text" id="in2" disabled>
+</body>
+</html>

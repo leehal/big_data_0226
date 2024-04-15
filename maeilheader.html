@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    div{
+      height: 40px;
+      background-color: rgb(42, 79, 148);
+    }
+    .lefthead {
+      list-style: none;
+      padding: 0; /* ul의 기본 여백 제거 */
+    }
+    .lefthead li{
+      float: left;
+      display: flex;
+      height: 40px;
+      color: white;
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+    .lefthead li:hover{
+      background-color: white;
+      color: black;
+    }
+    .righthead {
+      list-style: none;
+      padding: 0; /* ul의 기본 여백 제거 */
+    }
+    .righthead li{
+      float: right;
+      display: flex;
+      height: 40px;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    .righthead li b:hover {
+      float: right;
+      display: flex;
+      height: 40px;
+      background-color: rgb(148, 112, 71);
+      color: white;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <ul class="lefthead">
+      <li style="background-color: white; color: black;">매일유업</li>
+      <li>매일아이</li>
+      <li>공식몰</li>
+      <li>maeil Do</li>
+    </ul>
+    <ul class="righthead">
+      <li><b>전체매뉴</b></li>
+      <li><b>EN</b></li>
+      <li><b>KR</b></li>
+      <li>고객센터</li>
+      <li>로그인</li>
+      <li>인재채용</li>
+    </ul>
+  </div>
+</body>
+</html>

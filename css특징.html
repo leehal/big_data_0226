@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      font-size: 2vw; /*보여주는 화면 대비 크기*/
+    }
+    p {
+      color: red;
+    }
+    div {
+      color: orange;
+    }
+    .parent{
+      font-size: 1.2rem; /*html 대비 1.2배*/
+    }
+    .child{
+      font-size: 1.5em; /*부모 대비 1.5배*/
+    }
+    .child-to-child{
+      font-size: 80%; /*부모 대비 80%*/
+    }
+  </style>
+</head>
+<body>
+  <p>
+    p태그 색상
+    <div>
+      <span>하위 색상 : 부모의 컬러를 상속 받음</span>
+    </div>
+  </p>
+
+  <div class="parent">
+    <p>부모의 폰트 입니다</p>
+    <div class="child">
+      <p>자식의 폰트 입니다</p>
+      <div class="child-to-child">
+        <p>자식의 자식 폰트 입니다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
