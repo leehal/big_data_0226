@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border-color: red;
+      animation-name: bgchange;
+      animation-duration: 5s;
+    }
+    @keyframes bgchange {
+      0% {
+        background-color: red;
+        border-radius: 10%;
+      }
+      25%{
+        background-color: yellow;
+        border-radius: 25%;
+      }
+      50%{
+        background-color: green;
+        border-radius: 35%;
+      }
+      100%{
+        background-color: blue;
+        border-radius: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
