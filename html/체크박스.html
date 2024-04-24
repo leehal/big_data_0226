@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#">
+    <input type="checkbox" id="apple" value="apple">
+    <label for="apple">사과</label>
+    <input type="checkbox" id="banana" value="banana">
+    <label for="banana">바나나</label>
+    <input type="checkbox" id="orange" value="orange">
+    <label for="orange">오렌지</label>
+    <input type="checkbox" id="melon" value="melon">
+    <label for="melon">멜론</label>
+  </form>
+  <script>
+    const checkboxEls = document.querySelectorAll("[type='checkbox']");
+    console.log(checkboxEls);
+    for(let e of checkboxEls) e.checked = true;
+  </script>
+</body>
+</html>
