@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 인라인 방식으로 이벤트 등록하기
+  <button onclick="clickEvent()">클릭</button>
+  <script>
+    function clickEvent() {
+      alert("click 이벤트가 발생 했습니다.");
+    }
+  </script> -->
+  
+  <form action="#">
+    <input type="text" id="input_box" onfocus="focusEvent()" onblur="blurEvent()">
+  </form>
+
+  <!-- 이벤트 등록 매서드로 이벤트 등록하기 -->
+  <button>클릭</button>
+  <script>
+    let input_Box = document.querySelector("#input_box");
+    function focusEvent() {
+      input_Box.style.background = "Orange";
+    }
+    function blurEvent() {
+      input_Box.style.background = "green";
+    }
+
+    const btnEl = document.querySelector("button");
+    btnEl.addEventListener("click", function(){
+      alert("버튼이 눌러졌습니다");
+    });
+  </script>
+</body>
+</html>
